@@ -1,0 +1,39 @@
+<library path="lib/librcf_chassis_controllers">
+
+    <class name="rcf_chassis_controllers/BalancePidController"
+           type="rcf_chassis_controllers::BalancePidController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The 2 wheel diff balance chassis controller. It expects a EffortJointInterface
+            type of hardware interface.
+        </description>
+    </class>
+
+    <class name="rcf_chassis_controllers/BalanceLqrController"
+           type="rcf_chassis_controllers::BalanceLqrController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The lqr balance chassis controller. It expects a EffortJointInterface
+            type of hardware interface.
+        </description>
+    </class>
+
+    <class name="rcf_chassis_controllers/MecanumController"
+           type="rcf_chassis_controllers::MecanumController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The mecanum wheel Chassis controller. It expects a EffortJointInterface
+            type of hardware interface.
+        </description>
+    </class>
+
+    <class name="rcf_chassis_controllers/OmniController"
+           type="rcf_chassis_controllers::OmniController"
+           base_class_type="controller_interface::ControllerBase">
+        <description>
+            The OmniController Chassis controller. It expects a EffortJointInterface
+            type of hardware interface.
+        </description>
+    </class>
+
+</library>
